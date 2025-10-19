@@ -156,7 +156,7 @@ void ListStdOrder::cancelOrder() {
     cout << "Order #" << num << " canceled.\n";
 }
 
-void ListStdOrder::saveToFile(const string& filename = "orders.txt") {
+void ListStdOrder::saveToFile(const string& filename) {
     ofstream file(filename);
     if (!file) { cerr << "Cannot open file for writing.\n"; return; }
     StdOrder* cur = head;
@@ -170,7 +170,7 @@ void ListStdOrder::saveToFile(const string& filename = "orders.txt") {
     file.close();
 }
 
-void ListStdOrder::loadFromFile(const string& filename = "orders.txt") {
+void ListStdOrder::loadFromFile(const string& filename) {
     ifstream file(filename);
     if (!file) { return; }
     string line;
