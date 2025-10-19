@@ -12,8 +12,8 @@ public:
     int price;
 };
 
-const int MENU_SIZE;
-MenuItem menu[];
+extern const int MENU_SIZE;
+extern MenuItem menu[];
 
 void showMenu();
 
