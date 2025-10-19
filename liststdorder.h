@@ -2,15 +2,19 @@
 #define LISTSTDORDER_H
 
 #include "stdorder.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+using namespace std;
 
 
-class listStdOrder {
+class ListStdOrder {
 private:
     StdOrder* head;
     int orderCounter;
 
 public:
-    listStdOrder();
+    ListStdOrder();
     void addStudentOrder();
     void reviewAll();
     void changeOrder();

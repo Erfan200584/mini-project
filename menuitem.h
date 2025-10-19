@@ -1,6 +1,7 @@
 #ifndef MENUITEM_H
 #define MENUITEM_H
 #include <string>
+#include <iostream>
 using namespace std;
 
 
@@ -13,5 +14,7 @@ public:
 
 const int MENU_SIZE;
 MenuItem menu[];
+
+void showMenu();
 
 #endif
