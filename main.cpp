@@ -12,7 +12,6 @@ int main() {
     int choice;
     do {
         cout << "\n======:: Student Restaurant System ::======\n";
-        
         cout << "1) Menu\n";
         cout << "2) New Order\n";
         cout << "3) Deliver Order\n";
